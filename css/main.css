@@ -1,0 +1,422 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin+Sketch:400,700');
+
+body {
+    background: url("/img/background7.jpg");
+    overflow-x: hidden;
+    
+}
+
+header {
+    padding: 20px 15px;
+}
+
+#logo {
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    background-color: dodgerblue;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    float: left;
+    
+}
+
+#insideLogo {
+    width: 50px;
+    height: 50px;
+    padding-top: 5px;
+    padding-left: 5px;
+    clear: both;
+    float: left;
+}
+
+#logo a {
+    text-decoration: none;
+}
+
+#name {
+    text-decoration: none;
+}
+
+#jobTitle {
+    text-decoration: none;
+}
+
+#name p {
+    color: antiquewhite;
+    display: block;
+    margin-left: 100px;
+    margin-top: -10px;
+    overflow: auto;
+    font-weight: bolder;
+    font-family: sans-serif, cursive;
+    
+}
+
+#jobTitle p {
+    color: antiquewhite;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+#top-nav {
+    float: right;
+    display: inline-block;
+}
+
+#top-nav a {
+    display: inline-block;
+    font-family: sans-serif;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px;
+    background-color: dodgerblue;
+}
+
+#top-nav a:hover {
+    color: black;
+    text-decoration: none;
+    padding: 0 15px; /*If i change 0 to 15px the box around links won't shrink in fact they'll remain the same.*/
+}
+
+.jumbo {
+    padding: 200px 0;
+    margin: -68px;
+}
+
+.jumbo h1 {
+    text-align: center;
+   font-family: 'Cabin Sketch', cursive;
+    color: white;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+#welcome {
+    color: orange;
+}
+
+.work {
+    padding: 60px 200px;
+    text-align: center;
+}
+
+.work .box {
+    display: inline-block;
+    background-color: white;
+    width: 250px;
+    height: 250px;
+    margin: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.work .box .hoverBox {
+    background: rgba(48, 57, 92, .7);
+    position: relative;
+    bottom: -100%;
+    height: 100%;
+    position: 100%;
+    transition: all .5s ease;
+    padding: 35px 15px;
+    text-align: left;
+    opacity: 0;
+}
+
+.work .box:hover .hoverBox {
+    opacity: 1;
+   bottom: 0; 
+} 
+
+.work .box .hoverBox h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.work .box .hoverBox h5 {
+    color: white;
+    font-size: 18px;
+}
+
+#second {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+    margin-top: 200px;
+    width: 2000px;
+    height: 50px;
+    background-color: dodgerblue;
+}
+
+#second p {
+    color: white;
+    font-weight: bolder;
+}
+
+#second1 {
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+    margin-top: 2900px;
+    width: 2000px;
+    height: 50px;
+    background-color: dodgerblue;
+}
+
+#second1 p {
+    color: white;
+    font-weight: bolder;
+}
+
+#second2 {
+   font-size: 20px;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+    margin-top: 0px;
+    width: 2000px;
+    height: 50px;
+    background-color: dodgerblue;
+}
+
+#second2 p {
+    color: white;
+    font-weight: bolder;
+}
+
+
+/*.model-container {
+    display: none;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0.7); 
+}
+
+.model-container.active {
+    display: block;
+    
+}
+
+.model {
+    box-sizing: border-box;
+    background-color: lightcyan;
+    margin: 100px auto;
+    width: 500px;
+    padding: 15px;
+}
+
+.model img {
+    width: 100%;
+}
+*/
+
+#image-Holder {
+    text-align: center;
+    width: 450px;
+    height: 400px;
+    background-color: dodgerblue;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 55px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    float: left; 
+}
+
+#profile-Picture {
+    width: 400px;
+    height: 400px;
+    border-radius: 190px;
+    clear: both;
+    float: left;
+    padding-left: 25px;
+}
+
+#container {
+    background-color: white;
+    width: 1100px;
+    height: 213px;
+    position: relative;
+    margin-left: 550px;
+    margin-top: 150px;
+    /*padding-left: 0; Space inside the box*/
+    padding-top: 10px;
+    border: 10px;
+    border-color: dodgerblue;
+    border-style: double;
+    border-radius: 20px;
+        
+}
+
+#bold { 
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-right: 100px;
+}
+
+#para1 {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    padding-right: 90px;  
+}
+
+#para2 {
+    font-size: 25px;
+    text-align: center;
+    padding-bottom: 15px;
+    padding-right: 100px;  
+}
+
+#picturebox3 {
+    /*background-color: dodgerblue; This line of code adds a background to the currently invisible box which the images reside in.*/
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    left: 490px;
+    top: 400px;
+    float: left;  
+    
+    }
+
+#picturebox4 {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    left: 490px;
+    top: 1100px;
+    float: left;  
+    
+    }
+
+#picturebox5 {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    left: 490px;
+    top: 1785px;
+    float: left;  
+    
+    }
+
+#picturebox6 {
+    width: 50%;
+    height: 60%;
+    position: absolute;
+    left: 490px;
+    top: 2480px;
+    float: left;  
+}
+
+/*.mySlides {
+    width: 85%;
+    height: 85%;
+    position: absolute;
+    right: 33px;
+    top: 33px;
+    
+}*/
+
+#slideshow {
+   width: 85%;
+    height: 85%;
+    position: absolute;
+    right: 65px;
+    top: 40px;
+    border: 10px;
+    border-style:outset;
+    border-radius: 20px;
+    border-color: dodgerblue;
+    
+}
+
+#slideshow2 {
+   width: 85%;
+    height: 85%;
+    position: absolute;
+    right: 65px;
+    top: 40px; 
+    border: 10px;
+    border-style:outset;
+    border-radius: 20px;
+    border-color: dodgerblue;
+}
+
+#slideshow3 {
+   width: 85%;
+    height: 85%;
+    position: absolute;
+    right: 65px;
+    top: 40px;
+    border: 10px;
+    border-style:outset;
+    border-radius: 20px;
+    border-color: dodgerblue;
+}
+
+#slideshow4 {
+   width: 85%;
+    height: 85%;
+    position: absolute;
+    right: 65px;
+    top: 40px; 
+    border: 10px;
+    border-style:outset;
+    border-radius: 20px;
+    border-color: dodgerblue;
+}
+
+#contact {
+    background-color: white;
+    width: 1000px;
+    height: 100px;
+    position: relative;
+    margin-left: 460px;
+    margin-top: 15px;
+    /*padding-left: 0; Space inside the box*/
+    padding-top: 10px;
+    padding-right: 1px;
+    padding-left: 90px;
+    border: 10px;
+    border-color: dodgerblue;
+    border-style: double;
+    border-radius: 20px;
+}
+
+.social {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 200px;
+}
+
+.social li {
+    display: inline;
+}
+
+.social i {
+    font-size: 460%;
+    margin: 1%;
+    padding: 5% 5% 5% 4%;
+    color: dodgerblue;
+}
+
+.social i:hover {
+    color: #F5F5F5;
+}
+
+
+
