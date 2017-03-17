@@ -49,7 +49,7 @@ header {
     display: block;
     margin-left: 100px;
     margin-top: -10px;
-    overflow: auto;
+    /*overflow-y: hidden; Adding overflow-y: auto; adds little up and down arrows which allows for the name to be moved up and down but this is not needed which is why I have removed it.*/
     font-weight: bolder;
     font-family: sans-serif, cursive;
     
@@ -189,6 +189,24 @@ header {
 #second2 p {
     color: white;
     font-weight: bolder;
+    position: relative;
+    
+}
+
+#second3 {
+   font-size: 20px;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+    margin-top: 130px;
+    width: 2000px;
+    height: 50px;
+    background-color: dodgerblue;
+}
+
+#second3 p {
+    color: white;
+    font-weight: bolder;
 }
 
 
@@ -266,6 +284,16 @@ header {
     padding-bottom: 15px;
     padding-right: 100px;
 }
+
+#bold1 { 
+    font-size: 25px;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: 13px;
+    width: 90%;
+}    
 
 #para1 {
     font-size: 25px;
@@ -418,5 +446,434 @@ header {
     color: #F5F5F5;
 }
 
+
+/*--START MEDIA QUERIES--*/
+
+@media only screen and (min-width: 150px) and (max-width: 768px) {
+    
+body {
+        background: url("/img/background7.jpg");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        overflow-x: hidden;
+}
+    
+    header {
+    padding: 8px 5px;
+}
+
+#logo {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    background-color: dodgerblue;
+    display: inline-block;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    float: left;
+    position: relative;
+    left: -10px;
+    top: -5px;
+    
+}
+
+#insideLogo {
+    width: 30px;
+    height: 30px;
+    padding-top: 5px;
+    padding-left: 5px;
+    clear: both;
+    float: left;
+}
+    
+#name p {
+    color: antiquewhite;
+    display: block;
+    margin-left: 100px;
+    margin-top: -10px;
+    /*overflow-y: hidden;*/
+    font-weight: bolder;
+    font-family: sans-serif, cursive;
+    font-size: 10px;
+    position: relative;
+    left: -49px;
+    top: -30px;
+    
+}
+
+#jobTitle p {
+    color: antiquewhite;
+    font-size: 10px;
+    position: relative;
+    left: -49px;
+    top: -35px;
+} 
+    
+#top-nav {
+    float: right;
+    display: inline-block;
+}
+
+#top-nav a {
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: 10px;
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    background-color: dodgerblue;
+    position: relative;
+    top: 50px;
+    left: -47px;
+}
+
+#top-nav a:hover {
+    color: black;
+    text-decoration: none;
+    padding: 5px 5px; /*If i change 0 to 15px the box around links won't shrink in fact they'll remain the same.*/
+}
+    
+.jumbo {
+    padding: 0px;
+    margin: 0px;
+
+    position: relative;
+    top: 35px;
+    
+}
+
+.jumbo h1 {
+    text-align: center;
+   font-family: 'Cabin Sketch', cursive;
+    color: white;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+#welcome {
+    color: orange;
+}
+    
+    
+.work {
+    padding: 60px 200px;
+    text-align: center;
+}
+
+.work .box {
+    display: inline-block;
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    left: -165px;
+    
+}
+
+.work .box .hoverBox h3 {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+
+.work .box .hoverBox h5 {
+    color: white;
+    font-size: 12px;
+}
+
+ #second {
+    font-size: 9px;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: dodgerblue;
+    margin: 0; /*Margin:0; eliminates the extra space between the last picture box and the footer.*/
+}
+
+#image-Holder {
+    text-align: center;
+    width: 200px;
+    height: 150px;
+    background-color: dodgerblue;
+    display: inline-block;
+    margin-left: 30px;
+    margin-top: 55px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    float: left; 
+}
+
+#profile-Picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    clear: both;
+    float: left;
+    padding-left: 10px;
+    position: relative;
+    left: 15px;
+} 
+    
+#container {
+    background-color: white;
+    width: 96%;
+    height: 150px;
+    position: relative;
+    top: 270px;
+    margin-left: 0px;
+    margin-top: 0px;
+    /*padding-left: 0; Space inside the box*/
+    border: 5px;
+    border-color: dodgerblue;
+    border-style: double;
+    border-radius: 20px;
+        
+}
+
+#bold { 
+    font-size: 10px;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    top: -200px;
+    left: 13px;
+    width: 90%;
+}
+    
+#bold1 { 
+    font-size: 10px;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    top: -200px;
+    left: 13px;
+    width: 90%;
+}    
+
+#para1 {
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+    top: -205px;
+    left: -16px;
+    width: 90%;
+}
+
+#para2 {
+    font-size: 10px;
+    text-align: center; 
+    position: relative;
+    top: -205px;
+    left: 4px;
+    width: 90%;
+}  
+    
+#second3 {
+   font-size: 9px;
+    text-align: center;
+    position: relative;
+    top: 230px;
+    width: 100%;
+    height: 50px;
+    background-color: dodgerblue;
+}
+    
+#second3 p {
+    color: white;
+    font-weight: bolder;
+    width: 93%;
+    position: relative;
+    top: 0px;
+    left: 10px;
+}  
+    
+#picturebox3 {
+    /*background-color: dodgerblue; This line of code adds a background to the currently invisible box which the images reside in.*/
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    left: 135px;
+    top: 120px;
+    float: left;  
+    
+    }
+    
+#slideshow {
+   width: 85%;
+    height: 85%;
+    position: absolute;
+    right: 65px;
+    top: 40px; 
+    border: 5px;
+    border-style:outset;
+    border-radius: 20px;
+    border-color: dodgerblue;
+}
+    
+#picturebox4 {
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    left: 135px;
+    top: 250px;
+    float: left;  
+    } 
+    
+    
+    
+#slideshow2 {
+   width: 85%;
+    height: 85%;
+    position: absolute;
+    right: 65px;
+    top: 40px; 
+    border: 5px;
+    border-style:outset;
+    border-radius: 20px;
+    border-color: dodgerblue;
+}
+    
+    
+#picturebox5 {
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    left: 135px;
+    top: 370px;
+    float: left;  
+    } 
+    
+    
+    
+#slideshow3 {
+   width: 85%;
+    height: 85%;
+    position: absolute;
+    right: 65px;
+    top: 40px; 
+    border: 5px;
+    border-style:outset;
+    border-radius: 20px;
+    border-color: dodgerblue;
+}
+    
+    
+#picturebox6 {
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    left: 135px;
+    top: 490px;
+    float: left;  
+    } 
+    
+    
+    
+#slideshow4 {
+   width: 85%;
+    height: 85%;
+    position: absolute;
+    right: 65px;
+    top: 40px; 
+    border: 5px;
+    border-style:outset;
+    border-radius: 20px;
+    border-color: dodgerblue;
+}
+   
+#second1 {
+   font-size: 9px;
+    text-align: center;
+    position: relative;
+    top: 360px;
+    width: 100%;
+    height: 50px;
+    background-color: dodgerblue;
+    margin-top: 220px
+}
+    
+#second1 p {
+    color: white;
+    font-weight: bolder;
+    width: 93%;
+    position: relative;
+    top: 0px;
+    left: 10px;
+}   
+    
+#contact {
+    background-color: white;
+    width: 55%;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    left: -454px;
+    /*padding-left: 0; Space inside the box*/
+    border: 5px;
+    border-color: dodgerblue;
+    border-style: double;
+    border-radius: 20px;
+}
+    
+#bold1 { 
+    font-size: 13px;
+    font-weight: bolder;
+    text-align: center;
+    position: relative;
+    top: 0px;
+    left: -80px;
+    width: 150%;
+}
+
+.social {
+    list-style-type: none;
+    text-align: center;
+    margin-top: 90px;
+}
+
+.social li {
+    display: inline;
+}
+
+.social i {
+    font-size: 200%;
+    margin: 1%;
+    padding: 5% 5% 5% 4%;
+    color: dodgerblue;
+}
+
+   
+#second2 {
+   font-size: 9px;
+    text-align: center;
+    position: relative;
+    padding-top: 20px;
+    margin-top: 0px;
+    width: 100%;
+    height: 50px;
+    background-color: dodgerblue;
+}
+
+#second2 p {
+    color: white;
+    font-weight: bolder;
+    position: absolute;
+    top: 15px;
+    
+}
+
+    
+    }
+    
 
 
